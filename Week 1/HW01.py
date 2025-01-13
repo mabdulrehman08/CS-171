@@ -1,6 +1,14 @@
-hourly_wage=(float(input("What is your hourly wage?:")))
-work_hours=(int(input("How many hours have you worked in a week:")))
-work_year=(int(input("how many weeks in a year have you worked:")))
 
-income_week=hourly_wage* work_hours
-print (income_week)     
+
+
+#three inputs from the customer
+print("Welcome to Gross and Net Pay Estimator.")
+hourly_wage=(float(input("Enter Hourly Wage in dollars (float):\n")))
+work_hours=(int(input("Enter Hours Per Week (integer):\n")))
+work_year=(int(input("Enter Weeks Per Year Worked(integer):\n")))
+# the weekly pay
+income_week=hourly_wage*work_hours
+gross_pay=hourly_wage*work_year
+#the gross pay
+print ("Your weekly pay is",income_week,"dollars per year") 
+print("Your Gross Pay is",gross_pay,"dollars per year" )    
