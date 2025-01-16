@@ -1,4 +1,4 @@
-def totaltution(price,terms):
+def total_tution(price,terms):
     return price*terms
 
 
@@ -7,9 +7,17 @@ r=(0.055)/12
 n=120
 a=p*(r)
 
-print=(totaltution(19431,12))
-print=(totaltution(20014,10))
-print=(totaltution(20014,10))
-print("monthly payment", monthly_payment())
+#print=(total_tution(19431,12))
+#print=(total_tution(20014,10))
+#print=(total_tution(20014,10))
+#print=(total_tution(20015,10))
 
+def countdown(n):
+    if n <= 0:
+        print('Blastoff!')
+    else:
+        print(n)
+        countdown(n-1)
+
+print(countdown(3))
 
